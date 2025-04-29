@@ -1,115 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="IMG_4476.jpeg"/>
-  <title>Arjun Kumar | Resume Website</title>
+  <title>Arjun Kumar | Data Analyst Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    .header {
-      text-align: center;
-      padding: 2rem;
-      background-color: #dbeafe;
-    }
-    .photo {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-    }
-    .section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      color: #2563eb;
-      border-bottom: 2px solid #dbeafe;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style: disc;
-      padding-left: 1.5rem;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    .contact a {
-      display: block;
-      margin: 5px 0;
-    }
-    .button {
-      background-color: #2563eb;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 10px;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f9fafb; color: #1f2937; }
+    header { background: #2563eb; color: white; padding: 2rem 0; text-align: center; }
+    header img { width: 120px; height: 120px; border-radius: 50%; margin-bottom: 1rem; }
+    nav { background: white; padding: 1rem; text-align: center; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); }
+    nav a { margin: 0 15px; text-decoration: none; color: #2563eb; font-weight: bold; }
+    section { max-width: 1100px; margin: 2rem auto; padding: 0 2rem; }
+    h2 { margin-bottom: 1rem; color: #2563eb; }
+    .skills, .projects, .experience, .education, .contact { margin-bottom: 3rem; }
+    ul { list-style: disc inside; margin-top: 1rem; }
+    .projects a, .contact a { color: #ffffff; text-decoration: none; }
+    .button { display: inline-block; background: #444444; color: #777777; padding: 10px 20px; margin-top: 10px; border-radius: 5px; text-decoration: none; }
+    footer { text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #6b7280; }
   </style>
 </head>
 <body>
-  <div class="header">
-    <img src="IMG_4476.jpeg" alt="Arjun Kumar" class="photo">
-    <h1>Arjun Kumar</h1>
+  <header>
+    <img src="IMG_4476.jpeg" alt="Arjun Kumar">
+    <h1>Hi, I'm Arjun Kumar</h1>
     <p>Data Analyst | Python • SQL • Tableau • Power BI</p>
-  </div>
+  </header>
 
-  <div class="section">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>Detail-oriented Data Analyst with 2 years of experience in collecting, analyzing, and interpreting large datasets. Skilled at turning raw data into valuable insights through visualization and reporting.</p>
-  </div>
+    <p>I am a passionate Data Analyst with 2+ years of experience turning complex data into strategic business insights. Skilled at Python, SQL, Power BI, Tableau, and creating dynamic dashboards and reports.</p>
+  </section>
 
-  <div class="section">
+  <section id="skills" class="skills">
     <h2>Skills</h2>
     <ul>
       <li>Python, Pandas, NumPy</li>
       <li>SQL, MySQL</li>
       <li>Power BI, Tableau</li>
-      <li>Data Cleaning, EDA</li>
-      <li>Machine Learning (Basic)</li>
+      <li>Data Cleaning, EDA, Visualization</li>
+      <li>Machine Learning (Basic Regression, Classification)</li>
+      <li>PySpark, Hadoop (Basics)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Accenture Data Analytics Simulation</strong>: Built dashboards and visualized key business insights using Power BI.</li>
-    </ul>
-    <a href="https://github.com/arjun9669" class="button" target="_blank">View GitHub Portfolio</a>
-  </div>
+    <p><strong>Accenture Data Analytics Simulation</strong></p>
+    <p>Completed a business case analysis and created insightful dashboards with Power BI to drive strategic decisions.</p>
+    <a href="https://github.com/arjun9669" target="_blank" class="button">View My GitHub</a>
+  </section>
 
-  <div class="section">
+  <section id="experience" class="experience">
     <h2>Experience</h2>
     <ul>
-      <li><strong>Intern – LRB Infotech, UAE</strong> (Jan 2024 – Jun 2024)</li>
-      <li><strong>Associate Data Analyst – CAMP Systems, Hyderabad</strong> (May 2022 – Aug 2023)</li>
+      <li><strong>Intern – LRB Infotech, Abu Dhabi, UAE (Jan 2024 – Jun 2024)</strong>: Collected, cleaned, and analyzed business data to support real-time dashboards and decision-making processes.</li>
+      <li><strong>Associate Data Analyst – CAMP Systems, Hyderabad (May 2022 – Aug 2023)</strong>: Provided analytics insights, streamlined reporting, and enhanced operational efficiency through SQL and Excel automation.</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section id="education" class="education">
     <h2>Education</h2>
     <ul>
-      <li>Advanced Data Science & ML – L.I.S.R.C, Dubai (2023–2024)</li>
-      <li>B.Sc. Aircraft Maintenance Science – Bharathiar University (2017–2020)</li>
+      <li><strong>Advanced Data Science & ML Program</strong> – L.I.S.R.C, Dubai (2023–2024)</li>
+      <li><strong>B.Sc. Aircraft Maintenance Science</strong> – Bharathiar University, Coimbatore (2017–2020)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
-    <a href="mailto:arjunkguru2969@gmail.com">Email Me</a>
-    <a href="https://linkedin.com/in/arjun-kumar-3a997b1ba" target="_blank">Visit LinkedIn Profile</a>
-    <a href="https://github.com/arjun9669" target="_blank">Visit GitHub Profile</a>
-  </div>
+    <p>Email: <a href="mailto:arjunkguru2969@gmail.com">arjunkguru2969@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/arjun-kumar-3a997b1ba" target="_blank">linkedin.com/in/arjun-kumar</a></p>
+    <p>GitHub: <a href="https://github.com/arjun9669" target="_blank">github.com/arjun9669</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Arjun Kumar. All rights reserved.</p>
+  </footer>
 </body>
 </html>
